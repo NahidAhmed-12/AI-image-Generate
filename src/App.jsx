@@ -3,6 +3,8 @@ import Navbar from './Pages/Navbar';
 import Hero from './Pages/Hero';
 import Generate from './Pages/Generate';
 import Footer from './Pages/Footer';
+import Feature from './Pages/Feature';
+
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Navbar />
       <Hero />
       <Generate />
+
+      <Feature />
       <Footer />
     </div>
   );
