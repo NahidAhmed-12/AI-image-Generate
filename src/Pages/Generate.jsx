@@ -118,7 +118,7 @@ const Generate = () => {
              style={{ backgroundImage: 'radial-gradient(#4f4f4f 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
           </div>
 
-          {/* STATE 1: EMPTY */}
+         
           {!imageUrl && !loading && (
             <div className="text-center p-8 z-10">
               <div className="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/10 animate-pulse">
@@ -129,7 +129,7 @@ const Generate = () => {
             </div>
           )}
 
-          {/* STATE 2: LOADING (SCANNING EFFECT) */}
+          
           {loading && (
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/80 backdrop-blur-sm z-20">
               <div className="relative w-full h-1 bg-gray-800 overflow-hidden absolute top-0">
@@ -152,7 +152,7 @@ const Generate = () => {
             </div>
           )}
 
-          {/* STATE 3: IMAGE LOADED */}
+        
           {imageUrl && (
             <>
               <motion.img
@@ -168,7 +168,7 @@ const Generate = () => {
               {/* Premium Hover Overlay */}
               <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6 md:p-8 ${loading ? 'hidden' : ''}`}>
                  
-                 {/* Top Right Controls */}
+              
                  <div className="flex justify-end gap-3 translate-y-[-10px] group-hover:translate-y-0 transition-transform duration-300">
                      <button 
                         onClick={() => setIsFullScreen(true)}
@@ -200,7 +200,7 @@ const Generate = () => {
         </div>
       </motion.div>
 
-      {/* --- FULL SCREEN MODAL (PREMIUM LIGHTBOX) --- */}
+     
       <AnimatePresence>
         {isFullScreen && imageUrl && (
           <motion.div
@@ -218,7 +218,7 @@ const Generate = () => {
                 <X className="w-6 h-6 group-hover:rotate-90 transition-transform" />
             </button>
 
-            {/* Image Container with Glow */}
+          
             <motion.div
                 initial={{ scale: 0.9, opacity: 0, y: 20 }}
                 animate={{ scale: 1, opacity: 1, y: 0 }}
@@ -242,7 +242,7 @@ const Generate = () => {
                     >
                         <Download className="w-4 h-4" /> Save High Res
                     </button>
-                    {/* Optional: Share Button Logic can be added here */}
+                    
                 </div>
             </motion.div>
           </motion.div>

@@ -13,9 +13,8 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0a0a12] text-white selection:bg-purple-500/30">
       
-      {/* --- Background Effects --- */}
-      
-      {/* 1. Cyber Grid Background */}
+     
+    
       <div className="absolute inset-0 z-0 opacity-20"
            style={{
              backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px)',
@@ -23,7 +22,7 @@ const Hero = () => {
            }}>
       </div>
 
-      {/* 2. Top Spotlight Gradient */}
+     
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-purple-600/20 rounded-full blur-[100px] -z-10 pointer-events-none" />
       
       {/* 3. Floating Abstract Art Elements */}
