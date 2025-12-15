@@ -2,7 +2,7 @@
   <h1 style="margin-top: 10px;">VisionaryAI | Text-to-Image Generator</h1>
 </div>
 
-![App Screenshot](./public/public/ai-image.avif)
+![App Screenshot](./public/ai-image.avif)
 
 <div align="center">
 
